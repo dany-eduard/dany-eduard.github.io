@@ -1,0 +1,27 @@
+$primary-fonts: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', sans-serif;
+$code-fonts: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* img {
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: fill;
+}
+
+body {
+  margin: 0;
+  font-family: $primary-fonts;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: $code-fonts;
+}
