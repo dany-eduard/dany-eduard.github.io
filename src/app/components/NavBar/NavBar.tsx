@@ -15,7 +15,7 @@ interface LogoContainerPros {
 const Container = styled.div`
   width: 100%;
   height: 70px;
-  background-color: #ffffff00;
+  background-color: var(--transparent-color);
   z-index: 1;
 `;
 
@@ -36,7 +36,7 @@ const LogoContainer = styled.div`
   align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--primary-fonts);
 
   & > img {
     width: 100%;
@@ -52,7 +52,7 @@ const Menu = styled.ul<MenuProps>`
   list-style: none;
 
   @media (max-width: 960px) {
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--transparent-background);
     backdrop-filter: blur(23px);
     position: absolute;
     top: 70px;
@@ -85,17 +85,17 @@ const MenuItemLink = styled.a`
   justify-content: center;
   height: 100%;
   padding: 0.5rem 1.5rem;
-  color: #7510f7;
-  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
+  font-family: var(--primary-fonts);
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
   cursor: pointer;
   transition: 0.5s all ease;
 
   &:hover {
-    color: #290755;
-    border-bottom: 1px solid #290755;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
     transition: 1s all ease;
   }
 
@@ -107,7 +107,7 @@ const MenuItemLink = styled.a`
     margin: 0.5rem;
 
     &:hover {
-      background-color: #5b1e8a41;
+      background-color: var(--secondary-color-transparent);
     }
   }
 
