@@ -1,5 +1,16 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import Logo from '../../../assets/img/logo.svg';
+import MenuIcon from '../../../assets/img/menu.svg';
+import CloseIcon from '../../../assets/img/close.svg';
+
+interface MenuProps {
+  open: boolean;
+}
+
+interface LogoContainerPros {
+  open: boolean;
+}
 
 const Container = styled.div`
   width: 100%;
@@ -33,16 +44,39 @@ const LogoContainer = styled.div`
   }
 `;
 
-const Menu = styled.ul`
-  heigth: 100%;
+const Menu = styled.ul<MenuProps>`
+  // height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
+
+  @media (max-width: 960px) {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(23px);
+    position: absolute;
+    top: 70px;
+    left: ${({ open }) => (open ? '0' : '-100%')};
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
 `;
 
 const MenuItem = styled.li`
   height: 100%;
+
+  @media (max-width: 960px) {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
 `;
 
 const MenuItemLink = styled.a`
@@ -76,16 +110,40 @@ const MenuItemLink = styled.a`
       background-color: #5b1e8a41;
     }
   }
+
+  @media (max-width: 960px) {
+    // width: 16%;
+  }
+`;
+
+const MobileIcon = styled.div<LogoContainerPros>`
+  display: none;
+  @media (max-width: 960px) {
+    background-image: url(${({ open }) => (!open ? MenuIcon : CloseIcon)});
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s all ease;
+  }
 `;
 
 const NavBar = () => {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+
   return (
     <Container>
       <Wrapper>
         <LogoContainer>
           <img src={Logo} alt="danyeduard-logo" />
         </LogoContainer>
-        <Menu>
+        <MobileIcon open={showMobileMenu} onClick={() => setShowMobileMenu(!showMobileMenu)}>
+          {!showMobileMenu ? (
+            <img src={MenuIcon} alt="menu-icon" />
+          ) : (
+            <img src={CloseIcon} alt="close-icon" />
+          )}
+        </MobileIcon>
+        <Menu open={showMobileMenu} onClick={() => setShowMobileMenu(!showMobileMenu)}>
           <MenuItem>
             <MenuItemLink href="#about">Sobre mí</MenuItemLink>
           </MenuItem>
