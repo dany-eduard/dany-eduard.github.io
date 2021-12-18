@@ -1,23 +1,6 @@
 import styled from 'styled-components';
 import SectionWrapper from '../../../layouts/SectionWrapper/SectionWrapper';
-
-const Title = styled.h2`
-  font-size: clamp(26px, 5vw, var(--fz-heading));
-  font-weight: 600;
-  font-family: var(--primary-fonts);
-  color: var(--primary-color);
-  margin-bottom: 0.8rem;
-`;
-
-const Paragraph = styled.p`
-  font-size: clamp(var(--fz-xs), 8vw, var(--fz-md));
-  font-weight: 400;
-  font-family: var(--primary-fonts);
-  color: var(--secondary-color);
-  line-height: 1.5;
-  margin-top: 1rem;
-  max-width: 645px;
-`;
+import { Paragraph, SectionTitle } from '../../shared';
 
 const ListWrapper = styled.div`
   display: flex;
@@ -66,20 +49,20 @@ const SkillsList = styled.ul`
 const About = () => {
   return (
     <SectionWrapper>
-      <Title id="#about">Sobre mí</Title>
-      <Paragraph>
+      <SectionTitle id="#about">Sobre mí</SectionTitle>
+      <Paragraph maxWidth="645px">
         Mi nombre es Daniel Eduardo Almagro y disfruto de crear cosas para la Web. Mi interés por el
         desarrollo comenzó en el <time dateTime="2018">2018</time> cuando empecé a estudiar Mant. de
         Sistemas Informáticos. Actualmente conozco sobre muchos temas, pero considero que aún tengo
         un largo camino por recorrer y así mismo muchísimas cosas que aprender y otras por mejorar.
       </Paragraph>
-      <Paragraph>
+      <Paragraph maxWidth="645px">
         Me considero una persona responsable y con habilidad para el trabajo en equipo. Me gusta
         aprender cosas nuevas y una buena forma de hacerlo es escuchando a otras personas. Tambien
         me considero una persona resiliente y me gusta aceptar nuevos retos y probar mejores formas
         de hacer las cosas.
       </Paragraph>
-      <Paragraph>
+      <Paragraph maxWidth="645px">
         Mi primera experiencia laboral fue como desarrollador Front-End, utilizando React y
         Typescript y fue bastante agradable el equipo con el que compartí buenos momentos.
         Actualmente me enfoco principalmente en el desarrollo Back-End con Node.js.
