@@ -17,6 +17,12 @@ const TabList = styled.div`
   float: left;
   width: 25%;
   height: 300px;
+
+  @media (max-width: 960px) {
+    float: none;
+    display: flex;
+    height: auto;
+  }
 `;
 
 const TabButton = styled.button<TabButtonProps>`
@@ -36,6 +42,10 @@ const TabButton = styled.button<TabButtonProps>`
   :hover {
     background-color: #ddd;
   }
+
+  @media (max-width: 960px) {
+    padding: 12px;
+  }
 `;
 
 const TabContent = styled.div`
@@ -52,7 +62,6 @@ const TabContent = styled.div`
 
   @media (max-width: 960px) {
     width: 100%;
-    height: auto;
   }
 `;
 
@@ -125,7 +134,8 @@ const Experience = () => {
             </small>
             <Paragraph maxWidth="632px">
               • Auxiliar en el montaje y mantenimiento de redes de computadores. <br />
-              • Técnico operativo para soporte de sistemas informáticos y mantenimiento de  computadores. <br />
+              • Técnico operativo para soporte de sistemas informáticos y mantenimiento de
+              computadores. <br />
               • Auxiliar de soporte y atención al cliente en el área de informática. <br />
               • Auxiliar de progrmación.
               <br />
