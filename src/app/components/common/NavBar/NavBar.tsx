@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import Logo from '../../../assets/img/logo.svg';
-import MenuIcon from '../../../assets/img/menu.svg';
-import CloseIcon from '../../../assets/img/close.svg';
+import Logo from '../../../../assets/img/logo.svg';
+import MenuIcon from '../../../../assets/img/menu.svg';
+import CloseIcon from '../../../../assets/img/close.svg';
 
 interface MenuProps {
   open: boolean;
@@ -17,6 +17,7 @@ const Container = styled.div`
   height: 70px;
   background-color: var(--transparent-color);
   z-index: 1;
+  box-shadow: 2px 3px 12px #999;
 `;
 
 const Wrapper = styled.div`
