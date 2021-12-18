@@ -158,7 +158,11 @@ const NavBar = () => {
             <MenuItemLink href="#contact">Hablame</MenuItemLink>
           </MenuItem>
           <MenuItem>
-            <MenuItemLink href="#resume" className="btn_resume">
+            <MenuItemLink
+              href="https://drive.google.com/file/d/12BVXeru5dv3Gjlf08ffL1NiLWN0yVz2h/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn_resume">
               Resume
             </MenuItemLink>
           </MenuItem>
