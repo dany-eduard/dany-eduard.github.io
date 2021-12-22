@@ -73,8 +73,8 @@ const Experience = () => {
   };
 
   return (
-    <SectionWrapper>
-      <SectionTitle id="experience">Donde he trabajado</SectionTitle>
+    <SectionWrapper id="experience">
+      <SectionTitle>Donde he trabajado</SectionTitle>
       <Container>
         <TabList>
           <TabButton onClick={() => handleOpenTab(2)} active={activeTab === 2}>

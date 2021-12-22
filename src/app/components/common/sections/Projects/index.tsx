@@ -22,8 +22,8 @@ const Container = styled.div`
 
 const Projects = () => {
   return (
-    <SectionWrapper>
-      <SectionTitle id="projects">Proyectos</SectionTitle>
+    <SectionWrapper id="projects">
+      <SectionTitle>Proyectos</SectionTitle>
       <Container>
         <h3>⚠ section under construction.</h3>
       </Container>

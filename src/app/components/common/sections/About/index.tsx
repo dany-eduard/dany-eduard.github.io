@@ -48,8 +48,8 @@ const SkillsList = styled.ul`
 
 const About = () => {
   return (
-    <SectionWrapper>
-      <SectionTitle id="#about">Sobre mí</SectionTitle>
+    <SectionWrapper id="about">
+      <SectionTitle>Sobre mí</SectionTitle>
       <Paragraph maxWidth="645px">
         Mi nombre es Daniel Eduardo Almagro y disfruto de crear cosas para la Web. Mi interés por el
         desarrollo comenzó en el <time dateTime="2018">2018</time> cuando empecé a estudiar Mant. de

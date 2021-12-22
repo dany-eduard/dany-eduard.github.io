@@ -22,10 +22,10 @@ const SubTitle = styled.div`
 
 const Contact = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="contact">
       <Greeting>¿Qué es lo siguiente?</Greeting>
       <SubTitle>
-        <h3 id="contact">Contactame...</h3>
+        <h3>Contactame...</h3>
       </SubTitle>
       <Paragraph maxWidth="632px">
         Aunque actualmente no estoy buscando nuevas oportunidades, mi bandeja de entrada está
