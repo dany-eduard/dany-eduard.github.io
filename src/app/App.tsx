@@ -1,4 +1,4 @@
-import NavBar from './components/common/NavBar/NavBar';
+import NavBar from './components/common/NavBar';
 import {
   SectionAbout,
   SectionContact,

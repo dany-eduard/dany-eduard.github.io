@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import SectionWrapper from '../../../layouts/SectionWrapper/SectionWrapper';
+import SectionWrapper from '../../../layouts/SectionWrapper';
 import { Paragraph, SectionTitle } from '../../shared';
 
 const Container = styled.div`

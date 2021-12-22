@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import SectionWrapper from '../../../layouts/SectionWrapper/SectionWrapper';
+import SectionWrapper from '../../../layouts/SectionWrapper';
 
 const Greeting = styled.div`
   font-size: clamp(var(--fz-xs), 8vw, var(--fz-xl));

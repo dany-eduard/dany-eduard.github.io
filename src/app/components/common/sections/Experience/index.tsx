@@ -1,4 +1,4 @@
-import SectionWrapper from '../../../layouts/SectionWrapper/SectionWrapper';
+import SectionWrapper from '../../../layouts/SectionWrapper';
 import styled from 'styled-components';
 import { useState } from 'react';
 import { Paragraph, SectionTitle } from '../../shared';
