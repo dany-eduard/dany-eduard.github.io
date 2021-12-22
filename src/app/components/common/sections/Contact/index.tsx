@@ -17,7 +17,6 @@ const SubTitle = styled.div`
     font-family: var(--primary-fonts);
     color: var(--primary-color);
     line-height: 1.1;
-    margin-left: -0.3rem;
   }
 `;
 
