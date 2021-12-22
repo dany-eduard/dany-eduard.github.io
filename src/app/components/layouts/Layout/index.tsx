@@ -31,8 +31,7 @@ export const ContactBottons = styled.div`
 
 export const Main = styled.main`
   grid-area: main;
-  max-width: 1366px;
-  padding: 0px 100px;
+  padding-left: 100px;
   overflow-y: scroll;
   overflow-x: hidden;
 
