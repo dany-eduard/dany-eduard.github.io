@@ -34,6 +34,37 @@ const GlobalStyles = createGlobalStyle`
   --grey: #828282;
 }
 
+/**
+ * Beautiful scrollbar CSS
+ * https://gist.github.com/dany-eduard/348c03758665917a449bd876fe4b9268
+ */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-button:increment,
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
+*::-webkit-scrollbar-track {
+  background: #e1e1e1;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgb(182, 182, 182);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #999999;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #858585;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +75,11 @@ const GlobalStyles = createGlobalStyle`
   -webkit-user-drag: none;
   user-select: none;
   pointer-events: fill;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: calc(60% + 0.8vmin);
 }
 
 body {
