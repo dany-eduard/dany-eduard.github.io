@@ -37,7 +37,7 @@ const Description = styled.p`
 const Intro = () => {
   return (
     <SectionWrapper>
-      <Greeting>Hola, soy</Greeting>
+      <Greeting id='about'>Hola, soy</Greeting>
       <NameDescriptor>
         <h2>Daniel Eduardo.</h2>
         <h2 className="descriptor">Full-Stack Web Developer</h2>
