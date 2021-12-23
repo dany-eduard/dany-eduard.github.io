@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import Logo from '../../../../assets/img/logo.svg';
-import MenuIcon from '../../../../assets/img/menu.svg';
-import CloseIcon from '../../../../assets/img/close.svg';
+import Logo from '../../../../assets/icons/logo.svg';
+import MenuIcon from '../../../../assets/icons/menu.svg';
+import CloseIcon from '../../../../assets/icons/close.svg';
 
 interface MenuProps {
   open: boolean;
