@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const Layout = styled.div`
   display: grid;
-  gird-auto-columns: 1fr;
-  grid-template-columns: 0.2fr 1.8fr;
+  grid-template-columns: 0.1fr 1.8fr;
   grid-template-rows: 0.2fr 1.8fr;
   grid-template-areas:
     'nav nav'
@@ -25,13 +24,14 @@ export const NavBarLayout = styled.div`
   grid-area: nav;
 `;
 
-export const ContactBottons = styled.div`
+export const ContactBottonsLayout = styled.div`
   grid-area: contact-bottons;
 `;
 
 export const Main = styled.main`
   grid-area: main;
-  padding-left: 100px;
+  max-width: 100vw;
+  padding-left: 15%;
   overflow-y: scroll;
   overflow-x: hidden;
 
