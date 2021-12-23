@@ -1,22 +1,32 @@
+import FooterComponet from './components/common/Footer';
 import NavBar from './components/common/NavBar';
 import {
+  ContactBottons,
   SectionAbout,
   SectionContact,
   SectionExperience,
   SectionIntro,
   SectionProjects,
 } from './components/common/sections';
+import { ContactBottonsLayout, Layout, Main, NavBarLayout } from './components/layouts';
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <SectionIntro />
-      <SectionAbout />
-      <SectionExperience />
-      <SectionProjects />
-      <SectionContact />
-    </div>
+    <Layout>
+      <NavBarLayout>
+        <NavBar />
+      </NavBarLayout>
+      <Main>
+        <SectionIntro />
+        <SectionAbout />
+        <SectionExperience />
+        <SectionProjects />
+        <SectionContact />
+      </Main>
+      <ContactBottonsLayout>
+        <ContactBottons />
+      </ContactBottonsLayout>
+    </Layout>
   );
 }
 
