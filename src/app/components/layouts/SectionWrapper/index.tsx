@@ -6,7 +6,7 @@ const SectionWrapper = styled.section`
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
+  min-height: 85vh;
   padding: 0;
   transition: all 0.5s ease;
 `;

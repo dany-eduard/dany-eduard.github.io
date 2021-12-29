@@ -23,6 +23,7 @@ const GlobalStyles = createGlobalStyle`
 
   /***** Colors *****/
   --primary-color: #7510f7;
+  --primary-color-gradient: #9e5dff85;
   --primary-color-claro: #9e5dff;
   --secondary-color: #290755;
   --secondary-color-transparent: #5b1e8a41;

@@ -40,7 +40,8 @@ const Intro = () => {
       <Greeting>Hola, soy</Greeting>
       <NameDescriptor>
         <h2>Daniel Eduardo.</h2>
-        <h2 className="descriptor">Full-Stack Web Developer</h2>
+        {/* <h2 className="descriptor">Full-Stack Web Developer</h2> */}
+        <h2 className="descriptor">Back-End Developer</h2>
       </NameDescriptor>
       <Description>
         Soy desarrollador web con experiencia en desarrollo Front-End y Back-End, con
