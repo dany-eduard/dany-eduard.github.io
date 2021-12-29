@@ -348,6 +348,7 @@ display: flex;
       'nav'
       'main'
       'contact-bottons';
+      max-height: 95vh;
   }
 `,ce=r.div`
   grid-area: nav;
