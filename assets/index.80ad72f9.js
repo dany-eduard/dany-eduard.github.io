@@ -176,11 +176,13 @@ display: flex;
   list-style: square;
 
   @media (max-width: 600px) {
-    margin-right: 2rem;
+    margin-right: 1.4rem;
+    margin-left: 0.2rem;
   }
 
   @media (max-width: 360px) {
     margin-right: 1rem;
+    margin-left: 3.4rem;
   }
 
   > li {
@@ -216,7 +218,6 @@ display: flex;
   background-color: ${({active:n})=>n?"#ccc":"inherit"};
   color: var(--grey);
   padding: 22px 16px;
-  width: 100%;
   border: none;
   outline: none;
   text-align: left;
