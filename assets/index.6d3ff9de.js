@@ -113,7 +113,7 @@ display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 95vh;
+  min-height: 100vh;
   padding: 0;
   transition: all 0.5s ease;
 `,O=r.div`
@@ -356,7 +356,6 @@ display: flex;
 `,me=r.main`
   grid-area: main;
   max-width: 100vw;
-  max-height: 85vh;
   padding-left: 15%;
   overflow-y: scroll;
   overflow-x: hidden;
