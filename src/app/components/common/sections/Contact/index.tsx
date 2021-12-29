@@ -22,6 +22,7 @@ const SubTitle = styled.div`
 
 const ContainerLinks = styled.div`
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
@@ -29,7 +30,6 @@ const ContainerLinks = styled.div`
 `;
 
 const ContactLink = styled.a`
-  display: inline-block;
   text-decoration: none;
   color: var(--secondary-color);
   font-size: clamp(var(--fz-xxs), 8vw, var(--fz-lg));
@@ -43,6 +43,11 @@ const ContactLink = styled.a`
 
   &:hover {
     background-color: var(--primary-color-gradient);
+  }
+
+  @media (max-width: 960px) {
+    font-size: clamp(var(--fz-xxs), 4vw, var(--fz-sm));
+    padding: 0.5rem 0.8rem;
   }
 `;
 
@@ -60,12 +65,12 @@ const Contact = () => {
       </Paragraph>
       <ContainerLinks>
         <ContactLink href="mailto:danyeduard17@gmail.com" target="_blank" rel="noopener noreferrer">
-          Di hola en Gmail
+          Mail
         </ContactLink>
-        <ContactLink href="tel:+573017496696">Llamame</ContactLink>
         <ContactLink href="https://wa.link/1bdf5b" target="_blank" rel="noopener noreferrer">
           WhatsApp
         </ContactLink>
+        <ContactLink href="tel:+573017496696">Llamame</ContactLink>
       </ContainerLinks>
     </SectionWrapper>
   );
