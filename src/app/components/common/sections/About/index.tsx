@@ -23,11 +23,13 @@ const SkillsList = styled.ul`
   list-style: square;
 
   @media (max-width: 600px) {
-    margin-right: 2rem;
+    margin-right: 1.4rem;
+    margin-left: 0.2rem;
   }
 
   @media (max-width: 360px) {
     margin-right: 1rem;
+    margin-left: 3.4rem;
   }
 
   > li {
