@@ -71,9 +71,9 @@ display: flex;
   }
 `,e=y.exports.jsx,o=y.exports.jsxs,F=r.div`
   ${L}
-`,W=r.div`
-  ${D}
 `,B=r.div`
+  ${D}
+`,W=r.div`
   ${I}
 `,N=r.ul`
   display: flex;
@@ -107,7 +107,7 @@ display: flex;
     cursor: pointer;
     transition: 0.5s all ease;
   }
-`,q=()=>{const[t,l]=w.exports.useState(!1);return e(F,{children:o(W,{children:[e(B,{children:e("img",{src:T,alt:"danyeduard-logo"})}),e(R,{open:t,onClick:()=>l(!t),children:t?e("img",{src:k,alt:"close-icon"}):e("img",{src:z,alt:"menu-icon"})}),o(N,{open:t,onClick:()=>l(!t),children:[e(c,{children:e(d,{href:"#about",children:"Sobre m\xED"})}),e(c,{children:e(d,{href:"#experience",children:"Experiencia"})}),e(c,{children:e(d,{href:"#projects",children:"Proyectos"})}),e(c,{children:e(d,{href:"#contact",children:"Hablame"})}),e(c,{children:e(d,{href:"https://drive.google.com/file/d/12BVXeru5dv3Gjlf08ffL1NiLWN0yVz2h/view?usp=sharing",target:"_blank",rel:"noopener noreferrer",className:"btn_resume",children:"Resume"})})]})]})})},m=r.section`
+`,q=()=>{const[t,l]=w.exports.useState(!1);return e(F,{children:o(B,{children:[e(W,{children:e("img",{src:T,alt:"danyeduard-logo"})}),e(R,{open:t,onClick:()=>l(!t),children:t?e("img",{src:k,alt:"close-icon"}):e("img",{src:z,alt:"menu-icon"})}),o(N,{open:t,onClick:()=>l(!t),children:[e(c,{children:e(d,{href:"#about",children:"Sobre m\xED"})}),e(c,{children:e(d,{href:"#experience",children:"Experiencia"})}),e(c,{children:e(d,{href:"#projects",children:"Proyectos"})}),e(c,{children:e(d,{href:"#contact",children:"Hablame"})}),e(c,{children:e(d,{href:"https://drive.google.com/file/d/12BVXeru5dv3Gjlf08ffL1NiLWN0yVz2h/view?usp=sharing",target:"_blank",rel:"noopener noreferrer",className:"btn_resume",children:"Resume"})})]})]})})},m=r.section`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -143,7 +143,7 @@ display: flex;
   line-height: 1.5;
   margin-top: 1rem;
   max-width: 560px;
-`,H=()=>o(m,{children:[e(O,{children:"Hola, soy"}),o($,{children:[e("h2",{children:"Daniel Eduardo."}),e("h2",{className:"descriptor",children:"Full-Stack Web Developer"})]}),e(P,{children:"Soy desarrollador web con experiencia en desarrollo Front-End y Back-End, con conocimientos en Node.js, React, Angular, Express, y muchas otras tecnolog\xEDas."})]}),u=r.h2`
+`,H=()=>o(m,{children:[e(O,{children:"Hola, soy"}),o($,{children:[e("h2",{children:"Daniel Eduardo."}),e("h2",{className:"descriptor",children:"Back-End Developer"})]}),e(P,{children:"Soy desarrollador web con experiencia en desarrollo Front-End y Back-End, con conocimientos en Node.js, React, Angular, Express, y muchas otras tecnolog\xEDas."})]}),u=r.h2`
   font-size: clamp(26px, 5vw, var(--fz-heading));
   font-weight: 600;
   font-family: var(--primary-fonts);
