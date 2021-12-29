@@ -327,7 +327,7 @@ display: flex;
   mix-blend-mode: multiply;
 
   &:hover {
-    box-shadow: 1px 12px 15px 3px rgba(0, 0, 0, 0.52);
+    // box-shadow: 1px 12px 15px 3px rgba(0, 0, 0, 0.52);
     filter: drop-shadow(15px 12px 15px orchid);
     transition: 1s all ease;
   }
