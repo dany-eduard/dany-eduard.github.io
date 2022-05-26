@@ -1,32 +1,32 @@
 import styled from 'styled-components';
 import SectionWrapper from '../../../layouts/SectionWrapper';
-import { Paragraph, SectionTitle } from '../../shared';
+import { Card, Cards, Paragraph, SectionTitle } from '../../shared';
+import projects from '../../../../constants/projects';
 
-const Container = styled.div`
-  display: flex;
-  width: 80vw;
-  height: 65vh;
+const Content = styled.div`
+  max-width: 1160px;
   margin-top: 1rem;
-  box-shadow: 2px 3px 12px #999;
-  justify-content: space-around;
-  align-items: center;
-
-  > h3 {
-    font-size: clamp(26px, 5vw, var(--fz-heading));
-    font-weight: 300;
-    font-family: var(--primary-fonts);
-    color: var(--primary-color);
-    margin-bottom: 0.8rem;
-  }
 `;
 
 const Projects = () => {
   return (
     <SectionWrapper id="projects">
       <SectionTitle>Proyectos</SectionTitle>
-      <Container>
-        <h3>⚠ section under construction.</h3>
-      </Container>
+      <Content>
+        <Cards>
+          {projects.map(({ name, description, technologies, repository, deployLink, image }) => (
+            <Card
+              key={name}
+              name={name}
+              description={description}
+              technologies={technologies}
+              repository={repository}
+              deployLink={deployLink}
+              image={image}
+            />
+          ))}
+        </Cards>
+      </Content>
       <Paragraph></Paragraph>
     </SectionWrapper>
   );
