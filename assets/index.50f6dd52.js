@@ -393,7 +393,7 @@ display: flex;
   @media (max-width: 960px) {
     padding: 0px 10%;
   }
-`;r.div``;function fe(){return u.exports.useEffect(()=>{var a;const t=(a=navigator.userAgentData)==null?void 0:a.mobile;setTimeout(()=>{t&&window.scrollTo(0,100)},200)},[navigator.userAgentData]),o(de,{children:[e(me,{children:e(O,{})}),o(he,{children:[e(H,{}),e(U,{}),e(V,{}),e(K,{}),e(re,{})]}),e(pe,{children:e(ce,{})})]})}const xe=S`
+`;r.div``;function fe(){return u.exports.useEffect(()=>{var a;const t=(a=navigator.userAgentData)==null?void 0:a.mobile;setTimeout(()=>{t&&window.scrollTo(0,1)},200)},[navigator.userAgentData]),o(de,{children:[e(me,{children:e(O,{})}),o(he,{children:[e(H,{}),e(U,{}),e(V,{}),e(K,{}),e(re,{})]}),e(pe,{children:e(ce,{})})]})}const xe=S`
 :root {
 
   /***** Screen sizes *****/
