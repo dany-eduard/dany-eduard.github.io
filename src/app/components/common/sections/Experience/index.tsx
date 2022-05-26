@@ -30,6 +30,7 @@ const TabButton = styled.button<TabButtonProps>`
   background-color: ${({ active }) => (active ? '#ccc' : 'inherit')};
   color: var(--grey);
   padding: 22px 16px;
+  width: 100%;
   border: none;
   outline: none;
   text-align: left;
@@ -44,6 +45,7 @@ const TabButton = styled.button<TabButtonProps>`
 
   @media (max-width: 960px) {
     padding: 12px;
+    width: auto;
   }
 `;
 
