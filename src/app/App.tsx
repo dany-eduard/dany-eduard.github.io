@@ -1,4 +1,3 @@
-import FooterComponet from './components/common/Footer';
 import NavBar from './components/common/NavBar';
 import {
   ContactBottons,
