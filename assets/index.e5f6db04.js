@@ -386,7 +386,6 @@ display: flex;
 `,he=r.main`
   grid-area: main;
   max-width: 100vw;
-  max-height: 85vh;
   padding-left: 15%;
   overflow-y: scroll;
   overflow-x: hidden;
