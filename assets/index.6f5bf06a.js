@@ -421,7 +421,7 @@ display: flex;
   mix-blend-mode: multiply;
 
   &:hover {
-    filter: drop-shadow(15px 12px 15px orchid);
+    filter: drop-shadow(2px 2px 10px);
     transition: 1s all ease;
   }
 `,ke=()=>e(ve,{children:o(we,{children:[e(f,{children:e("a",{href:"https://github.com/dany-eduard",target:"_blank",rel:"noopener noreferrer",children:e(x,{src:xe,alt:"GitHub"})})}),e(f,{children:e("a",{href:"mailto:danyeduard17@gmail.com",target:"_blank",rel:"noopener noreferrer",children:e(x,{src:ue,alt:"Gmail"})})}),e(f,{children:e("a",{href:"https://www.linkedin.com/in/dany-eduard/",target:"_blank",rel:"noopener noreferrer",children:e(x,{src:ge,alt:"LinkedIn"})})}),e(f,{children:e("a",{href:"https://twitter.com/dany_eduard17",target:"_blank",rel:"noopener noreferrer",children:e(x,{src:be,alt:"Twitter"})})}),e(f,{children:e("a",{href:"https://wa.link/1bdf5b",target:"_blank",rel:"noopener noreferrer",children:e(x,{src:ye,alt:"WhatsApp"})})})]})}),ze=r.div`
