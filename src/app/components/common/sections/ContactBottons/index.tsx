@@ -61,7 +61,7 @@ const Imagen = styled.img`
   mix-blend-mode: multiply;
 
   &:hover {
-    filter: drop-shadow(15px 12px 15px orchid);
+    filter: drop-shadow(2px 2px 10px);
     transition: 1s all ease;
   }
 `;
