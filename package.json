@@ -24,6 +24,6 @@
     "sass": "^1.45.0",
     "typescript": "^4.4.4",
     "user-agent-data-types": "^0.2.0",
-    "vite": "^2.7.2"
+    "vite": "^2.9.13"
   }
 }
